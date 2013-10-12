@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #programme qui fait deviner un nombre entre 1 et 100
-#amélioration à faire : vérifier la saisie de chaine
+#vérifie la saisie de chaine
 import random
 import sys
 
@@ -17,8 +17,8 @@ while(gagne==False):
 	try:
 		essai=int(chaine)
 	except:
-		print("caqca")
-		
+		print("caca")
+		sys.exit()
 	if(essai>nombrechoisi):
 		print("trop grand")
 		coups=coups+1
